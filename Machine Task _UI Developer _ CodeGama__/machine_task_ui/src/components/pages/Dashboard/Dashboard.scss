@@ -1,0 +1,49 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  background-color:black;
+  flex-wrap: wrap;
+
+  .main-dashboard {
+    width: 900px;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .logo-section {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px;
+
+    .main-dashboard {
+      width: 100%;
+      max-width: 600px; 
+    }
+
+    .logo-section {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .main-dashboard {
+      max-width: 100%; 
+    }
+
+    .logo-section {
+      gap: 15px;
+
+    }
+  }
+}
